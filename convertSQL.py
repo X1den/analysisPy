@@ -16,7 +16,6 @@ def sql_to_df(db_name: str, query: str) -> pd.DataFrame:
     conn.close()
     return df
 
-# -----ПРИМЕР ИСПОЛЬЗОВАНИЯ------
 if __name__ == '__main__':
     df = csv_to_df('data/titanic.csv')
     df_to_sql(df, 'data\mydata.db', 'titanic')
